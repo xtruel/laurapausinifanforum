@@ -1,0 +1,568 @@
+/* === FORUM COMMUNITY DARK THEME - Laura Pausini Fan Forum === */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    background-image: url('bg-laura.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #e0e0e0;
+    font-family: Verdana, Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #c8d8c8;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* === TOP NAVBAR === */
+.topbar {
+    background-color: #2a2a2a;
+    border-bottom: 1px solid #444;
+    padding: 5px 10px;
+    display: table;
+    width: 100%;
+    font-size: 11px;
+}
+.topbar-inner {
+    display: table-row;
+}
+.topbar-left {
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.topbar-right {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    white-space: nowrap;
+}
+.topbar .brand {
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    margin-right: 10px;
+    letter-spacing: 1px;
+}
+.topbar input[type="text"],
+.topbar input[type="password"] {
+    background: #3a3a3a;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 3px 6px;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+    width: 110px;
+    margin-right: 3px;
+}
+.btn-login {
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    padding: 4px 10px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+}
+.btn-register {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 4px 10px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+    margin-left: 3px;
+}
+.btn-loginwith {
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    padding: 4px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+    margin-left: 5px;
+}
+.topbar-icons {
+    display: inline;
+    margin-left: 8px;
+}
+.topbar-icons a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #555;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+    font-size: 11px;
+    margin-left: 3px;
+    text-decoration: none;
+}
+.topbar-icons a:hover {
+    background: #777;
+    text-decoration: none;
+}
+.topbar .search-box {
+    background: #3a3a3a;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 3px 6px;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+    width: 100px;
+    margin-left: 8px;
+}
+
+/* === BANNER === */
+.banner {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.banner img {
+    width: 100%;
+    display: block;
+}
+.banner-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+.banner-overlay h1 {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    font-family: 'Georgia', serif;
+    margin: 0;
+}
+.banner-overlay .subtitle {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-top: 4px;
+}
+
+/* === MAIN CONTAINER === */
+.forum-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+/* === CATEGORY HEADER (green bar) === */
+.category-bar {
+    background-color: #7ea83e;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 12px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+/* === FORUM GRID (2 columns) === */
+.forum-grid {
+    display: table;
+    width: 100%;
+    border-spacing: 6px;
+}
+.forum-row {
+    display: table-row;
+}
+.forum-box {
+    display: table-cell;
+    width: 50%;
+    background-color: rgba(40, 40, 40, 0.92);
+    border: 1px solid #444;
+    padding: 10px;
+    vertical-align: top;
+}
+.forum-box-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+.forum-box-title a {
+    color: #ffffff;
+}
+.forum-box-desc {
+    font-size: 10px;
+    color: #aaaaaa;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+/* Stats row inside forum box */
+.forum-stats {
+    display: table;
+    width: 100%;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.forum-stat {
+    display: table-cell;
+    width: 50%;
+    text-align: center;
+}
+.forum-stat .stat-num {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.forum-stat .stat-label {
+    font-size: 9px;
+    color: #999;
+    text-transform: capitalize;
+}
+
+/* Last post inside forum box */
+.forum-lastpost {
+    border-top: 1px solid #444;
+    padding-top: 6px;
+    font-size: 10px;
+    color: #bbb;
+}
+.forum-lastpost-inner {
+    display: table;
+    width: 100%;
+}
+.forum-lastpost-avatar {
+    display: table-cell;
+    width: 36px;
+    vertical-align: top;
+    padding-right: 6px;
+}
+.forum-lastpost-avatar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 0;
+}
+.forum-lastpost-info {
+    display: table-cell;
+    vertical-align: top;
+    font-size: 10px;
+    color: #bbb;
+}
+.forum-lastpost-info a {
+    color: #c8d8c8;
+}
+.forum-lastpost-date {
+    color: #888;
+    font-size: 10px;
+}
+
+/* === SHOUTBOX === */
+.shoutbox {
+    background-color: rgba(40, 40, 40, 0.92);
+    border: 1px solid #444;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+.shoutbox-header {
+    background-color: #7ea83e;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 6px 12px;
+}
+.shoutbox-messages {
+    padding: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 11px;
+    line-height: 1.6;
+}
+.shoutbox-messages .sb-time {
+    color: #888;
+    font-size: 10px;
+}
+.shoutbox-messages .sb-user {
+    font-weight: bold;
+    color: #ffffff;
+}
+.shoutbox-messages .sb-msg {
+    color: #ccc;
+}
+.shoutbox-input {
+    border-top: 1px solid #444;
+    padding: 6px 8px;
+    display: table;
+    width: 100%;
+}
+.shoutbox-input .sb-tools {
+    display: table-cell;
+    vertical-align: middle;
+    width: 120px;
+    white-space: nowrap;
+}
+.shoutbox-input .sb-tools button {
+    background: #555;
+    border: 1px solid #666;
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 1px;
+    font-family: Verdana, sans-serif;
+}
+.shoutbox-input input[type="text"] {
+    display: table-cell;
+    width: 100%;
+    background: #333;
+    border: 1px solid #555;
+    color: #ddd;
+    padding: 4px 6px;
+    font-size: 11px;
+    font-family: Verdana, sans-serif;
+}
+.shoutbox-input .sb-send {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50px;
+    padding-left: 4px;
+}
+.shoutbox-input .sb-send button {
+    background: #5cb85c;
+    border: none;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+}
+
+/* === ONLINE USERS BAR === */
+.online-bar {
+    background-color: #7ea83e;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+/* === FOOTER === */
+.footer {
+    text-align: center;
+    color: #666;
+    font-size: 10px;
+    padding: 15px 0;
+}
+
+/* === THREAD LIST PAGE === */
+.thread-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(40, 40, 40, 0.92);
+    border: 1px solid #444;
+}
+.thread-table th {
+    background-color: #3a3a3a;
+    color: #ccc;
+    font-size: 10px;
+    padding: 5px 8px;
+    text-align: left;
+    border-bottom: 1px solid #555;
+    font-weight: bold;
+}
+.thread-table td {
+    padding: 6px 8px;
+    border-bottom: 1px solid #333;
+    font-size: 11px;
+    color: #ccc;
+    vertical-align: top;
+}
+.thread-table tr:hover td {
+    background-color: rgba(60, 60, 60, 0.5);
+}
+.thread-table .thread-title a {
+    color: #ddd;
+    font-weight: bold;
+    font-size: 11px;
+}
+.thread-table .thread-desc {
+    font-size: 10px;
+    color: #888;
+}
+.thread-table .pinned {
+    color: #7ea83e;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/* === THREAD VIEW (posts) === */
+.post-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(40, 40, 40, 0.92);
+    border: 1px solid #444;
+    margin-bottom: 2px;
+}
+.post-header {
+    background-color: #3a3a3a;
+    border-bottom: 1px solid #555;
+}
+.post-header td {
+    padding: 5px 8px;
+    font-size: 11px;
+    color: #ccc;
+}
+.post-header .post-user {
+    font-weight: bold;
+    color: #fff;
+}
+.post-header .post-date {
+    text-align: right;
+    font-size: 10px;
+    color: #999;
+}
+.post-body {
+    display: table;
+    width: 100%;
+}
+.post-userinfo {
+    display: table-cell;
+    width: 150px;
+    background-color: rgba(50, 50, 50, 0.7);
+    padding: 8px;
+    vertical-align: top;
+    border-right: 1px solid #444;
+    text-align: center;
+}
+.post-userinfo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.post-userinfo .username {
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+.post-userinfo .userdetails {
+    font-size: 9px;
+    color: #999;
+    line-height: 1.5;
+}
+.post-content {
+    display: table-cell;
+    padding: 10px 12px;
+    vertical-align: top;
+    font-size: 12px;
+    color: #ddd;
+    line-height: 1.5;
+}
+.post-content .quote-box {
+    background-color: #2a2a2a;
+    border: 1px solid #555;
+    padding: 8px;
+    margin: 6px 0;
+    font-size: 11px;
+    color: #aaa;
+}
+.post-content .signature {
+    border-top: 1px solid #444;
+    margin-top: 15px;
+    padding-top: 6px;
+    font-size: 10px;
+    color: #777;
+    font-style: italic;
+}
+.post-actions {
+    text-align: right;
+    padding: 4px 8px;
+    background-color: #333;
+    border-top: 1px solid #444;
+    font-size: 10px;
+}
+.post-actions a {
+    color: #aaa;
+    margin-left: 8px;
+}
+
+/* === NAV / BREADCRUMB === */
+.breadcrumb {
+    font-size: 11px;
+    color: #999;
+    padding: 8px 0;
+}
+.breadcrumb a {
+    color: #aaa;
+}
+
+/* === PAGINATION === */
+.pagination {
+    padding: 6px 0;
+    font-size: 11px;
+    color: #999;
+}
+.pagination a {
+    color: #ccc;
+    padding: 2px 6px;
+    background: #3a3a3a;
+    border: 1px solid #555;
+    margin: 0 1px;
+}
+.pagination a:hover {
+    background: #555;
+}
+.pagination .current {
+    background: #7ea83e;
+    color: #fff;
+    padding: 2px 6px;
+    border: 1px solid #7ea83e;
+    font-weight: bold;
+}
+
+/* === BUTTONS === */
+.btn-forum {
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    padding: 5px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+}
+.btn-forum:hover {
+    background-color: #4cae4c;
+}
+
+/* === BACKGROUND OVERLAY === */
+.bg-overlay {
+    background: rgba(20, 20, 20, 0.75);
+    min-height: 100vh;
+    padding-bottom: 20px;
+}

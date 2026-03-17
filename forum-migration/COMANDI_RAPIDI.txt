@@ -1,0 +1,219 @@
+================================================================================
+  COMANDI RAPIDI - COPIA E INCOLLA
+================================================================================
+
+🎯 OGGI - PREPARAZIONE
+
+1. Esegui lo scraper (estrae dati dal forum):
+   cd forum-migration
+   python scraper.py
+
+2. Verifica che ha generato i file:
+   - forum_data.json (discussioni e post)
+   - users.csv (lista utenti)
+
+3. Apri la demo nel browser:
+   Doppio click su: forum-migration/public/index.html
+
+================================================================================
+
+🎬 DOMANI - PRESENTAZIONE
+
+Sequenza:
+1. Apri public/index.html nel browser
+2. Leggi PRESENTAZIONE_CLIENTE.md
+3. Mostra forum_data.json e users.csv
+4. Rispondi a domande
+5. Ottieni approvazione
+
+================================================================================
+
+📦 DOPO APPROVAZIONE - IMPLEMENTAZIONE
+
+Fase 1: Setup Flarum
+   bash flarum-setup.sh
+
+Fase 2: Configura database
+   Modifica .env con credenziali MySQL
+
+Fase 3: Import utenti
+   php artisan tinker < import-users.php
+
+Fase 4: Deploy preview Firebase
+   firebase init hosting
+   firebase deploy
+
+Fase 5: Deploy produzione Register
+   Leggi: register-deployment.md
+
+================================================================================
+
+🔧 PREREQUISITI
+
+Python:
+   pip install requests beautifulsoup4
+
+PHP:
+   php 8.0+
+   composer
+
+Firebase:
+   npm install -g firebase-tools
+   firebase login
+
+================================================================================
+
+📊 FILE GENERATI DA SCRAPER.PY
+
+forum_data.json:
+   {
+     "threads": [...],
+     "posts": [...],
+     "users": [...],
+     "exported_at": "..."
+   }
+
+users.csv:
+   username,email,created_at,status
+   user1,user1@forum.local,2025-03-17T10:00:00,pending_activation
+   user2,user2@forum.local,2025-03-17T10:00:00,pending_activation
+   ...
+
+================================================================================
+
+🌐 URL IMPORTANTI
+
+Forum attuale:
+   https://laurapausinifanforum.forumcommunity.net/
+
+Demo nuovo forum:
+   file:///path/to/forum-migration/public/index.html
+
+Preview Firebase (dopo deploy):
+   https://forum-preview.web.app
+
+Produzione Register (dopo deploy):
+   https://tuodominio.it
+
+================================================================================
+
+📧 EMAIL SUPPORT
+
+ForumCommunity (per export utenti):
+   support@forumcommunity.net
+
+Register (per hosting):
+   support@register.it
+
+Firebase (per hosting preview):
+   support@firebase.google.com
+
+================================================================================
+
+💾 BACKUP IMPORTANTI
+
+Prima di iniziare:
+   1. Backup forum attuale
+   2. Backup database
+   3. Backup file
+
+Durante migrazione:
+   1. Salva forum_data.json
+   2. Salva users.csv
+   3. Salva backup database
+
+Dopo migrazione:
+   1. Backup Flarum completo
+   2. Backup database MySQL
+   3. Backup file pubblici
+
+================================================================================
+
+🆘 TROUBLESHOOTING RAPIDO
+
+Scraper non funziona:
+   → Verifica connessione internet
+   → Verifica che BeautifulSoup è installato
+   → Prova: pip install requests beautifulsoup4
+
+Flarum non installa:
+   → Verifica PHP 8.0+
+   → Verifica Composer installato
+   → Prova: composer create-project flarum/flarum .
+
+Database non connette:
+   → Verifica credenziali .env
+   → Verifica MySQL running
+   → Prova: mysql -u user -p -h localhost database
+
+Firebase deploy fallisce:
+   → Verifica: firebase login
+   → Verifica: firebase init
+   → Prova: firebase deploy --force
+
+================================================================================
+
+📱 MOBILE TEST
+
+Apri public/index.html su:
+   - Desktop (Chrome, Firefox, Safari)
+   - Tablet (iPad, Android)
+   - Mobile (iPhone, Android)
+
+Verifica:
+   - Layout responsive
+   - Testo leggibile
+   - Pulsanti cliccabili
+   - Immagini caricate
+
+================================================================================
+
+🎯 OBIETTIVI GIORNALIERI
+
+OGGI:
+   ✅ Leggi START_HERE.md
+   ✅ Leggi CHECKLIST_DOMANI.md
+   ✅ Apri public/index.html
+   ✅ Esegui scraper.py
+   ✅ Leggi PRESENTAZIONE_CLIENTE.md
+
+DOMANI:
+   ✅ Presentazione al cliente (20 min)
+   ✅ Mostra demo
+   ✅ Mostra dati estratti
+   ✅ Ottieni approvazione
+
+SETTIMANA 1:
+   ✅ Estrazione dati completa
+   ✅ Contatta ForumCommunity
+   ✅ Setup Flarum
+
+SETTIMANA 2:
+   ✅ Import dati
+   ✅ Testing
+   ✅ Deploy preview Firebase
+
+SETTIMANA 3:
+   ✅ Deploy produzione
+   ✅ Comunicazione utenti
+   ✅ Monitoraggio
+
+================================================================================
+
+💡 CONSIGLI FINALI
+
+1. Sii sicuro: Conosci bene la soluzione
+2. Sii entusiasta: Mostra che credi nel progetto
+3. Sii professionale: Usa linguaggio tecnico appropriato
+4. Sii flessibile: Ascolta feedback e adatta
+5. Sii veloce: Non annoiare con dettagli tecnici
+6. Sii disponibile: Rispondi a tutte le domande
+
+================================================================================
+
+🚀 BUONA FORTUNA!
+
+Sei pronto. Hai tutto quello che serve.
+Vai e vinci! 💪
+
+================================================================================

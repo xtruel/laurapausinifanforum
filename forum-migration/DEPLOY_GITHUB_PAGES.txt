@@ -1,0 +1,167 @@
+================================================================================
+  DEPLOY SU GITHUB PAGES - ISTRUZIONI RAPIDE
+================================================================================
+
+🎯 OBIETTIVO:
+Mettere online la demo del forum su GitHub Pages in 5 minuti
+
+================================================================================
+
+📋 STEP 1: CREA REPOSITORY SU GITHUB
+
+1. Vai su: https://github.com/new
+2. Nome: forum-laura-pausini
+3. Descrizione: "Migrazione Forum Laura Pausini - Demo Flarum"
+4. Seleziona: Public
+5. Clicca: "Create repository"
+
+================================================================================
+
+📦 STEP 2: PUSH SU GITHUB
+
+Apri terminale e esegui:
+
+cd forum-migration
+
+git init
+
+git add .
+
+git commit -m "Initial commit - Forum migration demo"
+
+git remote add origin https://github.com/TUO_USERNAME/forum-laura-pausini.git
+
+git branch -M main
+
+git push -u origin main
+
+================================================================================
+
+🌐 STEP 3: ABILITA GITHUB PAGES
+
+1. Vai su: https://github.com/TUO_USERNAME/forum-laura-pausini
+2. Clicca: Settings (in alto a destra)
+3. Nel menu a sinistra: Pages
+4. Source: Seleziona "Deploy from a branch"
+5. Branch: Seleziona "gh-pages"
+6. Clicca: Save
+
+================================================================================
+
+✅ STEP 4: VERIFICA
+
+Dopo 1-2 minuti, il sito sarà online a:
+
+https://TUO_USERNAME.github.io/forum-laura-pausini/
+
+Oppure:
+
+https://forum-laura-pausini.github.io/
+
+================================================================================
+
+🔄 STEP 5: AGGIORNA LA DEMO
+
+Ogni volta che vuoi modificare la demo:
+
+1. Modifica: forum-migration/public/index.html
+
+2. Salva il file
+
+3. Esegui:
+   git add .
+   git commit -m "Update demo"
+   git push
+
+4. Aspetta 1-2 minuti
+
+5. Ricarica il sito
+
+================================================================================
+
+📊 COMANDI RAPIDI
+
+Copia e incolla:
+
+# Setup iniziale
+cd forum-migration
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/TUO_USERNAME/forum-laura-pausini.git
+git branch -M main
+git push -u origin main
+
+# Aggiornamenti futuri
+git add .
+git commit -m "Update"
+git push
+
+================================================================================
+
+🎯 URL FINALI
+
+Demo Forum:
+https://TUO_USERNAME.github.io/forum-laura-pausini/
+
+Repository:
+https://github.com/TUO_USERNAME/forum-laura-pausini
+
+Condividi con il cliente:
+"Ecco la preview del nuovo forum: https://TUO_USERNAME.github.io/forum-laura-pausini/"
+
+================================================================================
+
+🆘 PROBLEMI COMUNI
+
+Problema: "Il sito non si vede"
+Soluzione: 
+- Aspetta 2-3 minuti dopo il push
+- Ricarica la pagina (Ctrl+F5)
+- Verifica che il branch sia "gh-pages" nelle impostazioni
+
+Problema: "Errore 404"
+Soluzione:
+- Verifica che il file sia in: forum-migration/public/index.html
+- Verifica che il workflow sia stato eseguito (vai su Actions)
+
+Problema: "Il workflow fallisce"
+Soluzione:
+- Vai su: Repository → Actions
+- Clicca sul workflow fallito
+- Leggi l'errore
+- Correggi e fai push di nuovo
+
+================================================================================
+
+💡 BONUS: DOMINIO PERSONALIZZATO
+
+Se vuoi usare un dominio personalizzato (es: forum.tuodominio.it):
+
+1. Vai su: Settings → Pages
+2. Custom domain: Inserisci forum.tuodominio.it
+3. Vai al tuo provider DNS
+4. Aggiungi CNAME record:
+   forum.tuodominio.it → TUO_USERNAME.github.io
+5. Aspetta 24h per la propagazione DNS
+
+================================================================================
+
+📞 SUPPORTO
+
+Documentazione GitHub Pages:
+https://docs.github.com/en/pages
+
+Help GitHub:
+https://github.com/contact
+
+================================================================================
+
+🚀 FATTO!
+
+Il tuo forum è online e condivisibile!
+
+Condividi il link con il cliente:
+"Ecco la preview del nuovo forum: https://TUO_USERNAME.github.io/forum-laura-pausini/"
+
+================================================================================
